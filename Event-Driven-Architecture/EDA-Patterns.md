@@ -11,3 +11,5 @@
 ### Solution
 - The Outbox Pattern solves this problem by writing the messages to be published to the database(Imagine Outbox) with your state changes within the same transaction. 
 - A seperate job/publisher will pull the messages and send them to your Message Broker/Queue.
+
+![Image](Outbox-Pattern-Fig.jpg)
