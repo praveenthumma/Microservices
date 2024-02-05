@@ -6,7 +6,7 @@
 - Steps
   -  Save the event to DB.
   -  Publish the event to Message Broker/Queue.
-- What happens if publishing to Message Broker/Queue.
+- What happens if publishing to Message Broker/Queue Fails?
 
 ### Solution
 - The Outbox Pattern solves this problem by writing the messages to be published to the database(Imagine Outbox) with your state changes within the same transaction. 
@@ -18,7 +18,7 @@
 
 ## 2. Event Choreography & Orchestration (SAGA)
 ### Problem
-- Consistency dor Distributed Transaction
+- Consistency for Distributed Transaction
 
 ### Solution
 
